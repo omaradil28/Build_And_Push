@@ -27,8 +27,8 @@ jobs:
       - name: Build and Push Docker Image to Docker Hub
         uses: mr-smithers-excellent/docker-build-push@v4
         with:
-          image: mfcibmw3/image:latest   # Correct image tag format
+          image: mfcibmw3/image:latest   
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          directory: .  # This sets the build context to the root of the repository
+          directory: . 
