@@ -29,6 +29,5 @@ jobs:
         with:
           image: mfcibmw3/image:latest
           registry: docker.io
-          dockerfile: Dockerfile  # Only include this line if Dockerfile is NOT in root
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
